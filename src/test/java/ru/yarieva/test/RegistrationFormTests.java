@@ -23,16 +23,16 @@ public class RegistrationFormTests {
         //First Name
         $("#firstName").setValue("Mira");
 
-//Last Name
+        //Last Name
         $("#lastName").setValue("Smith");
 
-//email
+        //email
         $("#userEmail").setValue("Mira@mail.ru");
 
-//gender
+        //gender
         $("#genterWrapper").$(byText("Female")).click();
 
-// Mobile
+        // Mobile
         $("#userNumber").setValue("79802507861");
 
         //Date of Birth (10 sept 2007)
@@ -45,7 +45,6 @@ public class RegistrationFormTests {
         $("#subjectsInput").setValue("Hindi").pressEnter();
 
         // Hobbies
-
         $("#hobbiesWrapper").$(byText("Music")).click();
 
         //Picture
@@ -70,7 +69,6 @@ public class RegistrationFormTests {
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
 
         //Student Name
-
         $(".table-responsive").shouldHave(text("Student Name"), text("Mira Smith"), text("Mira@mail.ru"),
                 text("Female"), text("7980250786"), text("10 September,2007"), text("Hindi"), text("Music"),
                 text("JoyCorp.jpg"), text("Volgogradsky prospect, 21 st9"), text("Haryana Karnal"));
